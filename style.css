@@ -63,7 +63,7 @@ main {
 }
 
 .blog-archive {
-    width: 0%; /* Reduce table width so it doesn't stretch */
+    width: 100%; /* Reduce table width so it doesn't stretch */
     margin: 0 auto; /* Centers the whole table */
     text-align: center; /* Ensures everything inside is centered */
 }
