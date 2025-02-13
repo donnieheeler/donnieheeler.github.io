@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    margin-bottom: 5px; /* Reduce space below DH */
+    margin-bottom: 20px; /* Reduce space below DH */
 }
 
 header {
@@ -52,13 +52,48 @@ main {
     text-align: left;
 }
 
+.update-blog {
+    width: 100%;
+    font-size: 14px;
+}
+
+.update-blog th, .update-log td {
+    padding: 0px;
+    text-align: left;
+}
+
+.blog-archive {
+    width: 0%; /* Reduce table width so it doesn't stretch */
+    margin: 0 auto; /* Centers the whole table */
+    text-align: center; /* Ensures everything inside is centered */
+}
+
+.blog-archive td {
+    width: 0%; /* Ensures equal width for both columns */
+    vertical-align: top; /* Aligns content to the top of the column */
+    text-align: center; /* Centers the text inside each column */
+}
+
+.blog-archive ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0 auto; /* Centers the list inside the td */
+    display: inline-block; /* Helps keep the list centered */
+}
+
+.blog-archive li {
+    text-align: center;
+}
+
+
+
 .update-log th {
     font-weight: bold;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 100px;
     font-size: 0.8em;
     background-color: #fff;
 
