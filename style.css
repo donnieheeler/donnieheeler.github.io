@@ -121,7 +121,7 @@ footer {
     margin: 20px auto; /* Centers it on the page */
     padding: 20px;
     border: 2px solid #222; /* Adds a solid border */
-    border-radius: 8px; /* Slightly rounded corners */
+    border-radius: 0px; /* Slightly rounded corners */
     background-color: #f9f9f9; /* Light background for contrast */
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
 }
