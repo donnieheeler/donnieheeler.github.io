@@ -56,6 +56,9 @@ main {
     white-space: nowrap; /* Prevents text wrapping */
 }
 
+.update-log td:first-child {
+    width: 15%; /* Date column */
+}
 .update-blog {
     width: 100%;
     font-size: 14px;
