@@ -115,3 +115,23 @@ footer {
     padding: 20px; /* Reduced from 100px to prevent unnecessary space */
     font-size: 0.8em;
 }
+
+/* --- Mobile Fix for Table Overlap --- */
+@media screen and (max-width: 600px) {
+    .update-log {
+        table-layout: auto; /* Allows table to resize dynamically */
+    }
+
+    .update-log td {
+        display: block; /* Makes each row stack vertically on small screens */
+        width: 100%; /* Ensures text doesn’t squeeze */
+        text-align: left; /* Aligns text properly */
+        white-space: normal; /* Allows proper wrapping */
+    }
+
+    .update-log td:first-child, 
+    .update-log td:nth-child(2), 
+    .update-log td:last-child {
+        width: 100%; /* Each column takes full width on mobile */
+    }
+}
