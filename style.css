@@ -41,20 +41,25 @@ main {
 }
 
 .update-log {
-    width: 100%;  
-    max-width: 800px; /* Keeps table readable */
-    margin: 0 auto; /* Centers the table */
-    border-collapse: collapse; /* Removes extra spacing between rows */
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
     font-size: 14px;
     table-layout: fixed;
 }
 
 .update-log th, .update-log td {
     border-bottom: 1px solid #ccc;
-    padding: 5px 10px; /* Reduce padding (was 10px, now 5px) */
+    padding: 5px 10px; /* Reduce padding to fix gaps */
     text-align: left;
-    white-space: nowrap; /* Keeps date and section in one line */
+    white-space: nowrap; /* Prevents wrapping */
 }
+
+.update-log tr {
+    line-height: 1.2; /* Reduce excessive row spacing */
+}
+
 
 .update-log tr {
     line-height: 1.2; /* Reduce extra spacing between rows */
