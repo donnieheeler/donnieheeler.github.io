@@ -51,6 +51,7 @@ main {
     border-bottom: 1px solid #ccc;
     padding: 5px;
     text-align: left;
+    white-space: nowrap;
 }
 
 .update-blog {
