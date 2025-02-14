@@ -28,14 +28,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: blue; /* Initial color */
+    color: black; /* Initial color */
     text-decoration: none; /* Remove underline */
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-  color: red; /* Color on hover */
+  color: blue; /* Color on hover */
 }
 
 main {
