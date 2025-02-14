@@ -51,9 +51,9 @@ main {
 
 .update-log th, .update-log td {
     border-bottom: 1px solid #ccc;
-    padding: 5px;
+    padding: 10px; /* Reduce from 100px to 10px */
     text-align: left;
-    white-space: nowrap;
+    white-space: nowrap; /* Prevents text wrapping */
 }
 
 .update-blog {
