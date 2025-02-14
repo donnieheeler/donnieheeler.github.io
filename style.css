@@ -116,6 +116,31 @@ footer {
     font-size: 0.8em;
 }
 
+.roadmap-box {
+    max-width: 800px; /* Keeps it readable */
+    margin: 20px auto; /* Centers it on the page */
+    padding: 20px;
+    border: 2px solid #222; /* Adds a solid border */
+    border-radius: 8px; /* Slightly rounded corners */
+    background-color: #f9f9f9; /* Light background for contrast */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
+}
+
+.roadmap-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.roadmap-box ul, .roadmap-box ol {
+    margin-left: 20px;
+}
+
+.roadmap-box p, .roadmap-box li {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
 /* --- Responsive Table Fix (Keep Horizontal on Mobile) --- */
 @media screen and (max-width: 600px) {
     .update-log {
