@@ -40,31 +40,28 @@ main {
     padding: 5px;
 }
 
+/* --- Fixing the table layout to match reference --- */
 .update-log {
     width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    border-collapse: collapse;
+    max-width: 800px; /* Ensures a reasonable width */
+    margin: 0 auto; /* Centers the table */
+    border-collapse: collapse; /* Removes default spacing between rows */
     font-size: 14px;
-    table-layout: fixed;
+    table-layout: fixed; /* Ensures columns stay balanced */
 }
 
 .update-log th, .update-log td {
     border-bottom: 1px solid #ccc;
-    padding: 5px 10px; /* Reduce padding to fix gaps */
+    padding: 5px 10px; /* Reduce padding for better spacing */
     text-align: left;
-    white-space: nowrap; /* Prevents wrapping */
+    white-space: nowrap; /* Keeps short text on one line */
 }
 
 .update-log tr {
-    line-height: 1.2; /* Reduce excessive row spacing */
+    line-height: 1.2; /* Reduces excessive row spacing */
 }
 
-
-.update-log tr {
-    line-height: 1.2; /* Reduce extra spacing between rows */
-}
-
+/* Set column widths for even spacing */
 .update-log td:first-child {
     width: 15%; /* Date column */
 }
@@ -75,52 +72,46 @@ main {
 
 .update-log td:last-child {
     width: 65%; /* Entry text column */
-    white-space: normal; /* Allows wrapping if needed */
+    white-space: normal; /* Allows wrapping only in the last column */
 }
 
+/* --- Remove excessive spacing from .update-blog --- */
 .update-blog {
     width: 100%;
     font-size: 14px;
 }
 
 .update-blog th, .update-log td {
-    padding: 100px;
+    padding: 5px 10px; /* Fix excessive 100px padding issue */
     text-align: left;
 }
 
+/* --- Blog archive fixes --- */
 .blog-archive {
-    width: 100%; /* Reduce table width so it doesn't stretch */
-    margin: 0 auto; /* Centers the whole table */
-    text-align: center; /* Ensures everything inside is centered */
+    width: 100%; /* Make sure it doesn’t stretch too much */
+    margin: 0 auto; /* Centers the table */
+    text-align: center;
 }
 
 .blog-archive td {
-    width: 0%; /* Ensures equal width for both columns */
-    vertical-align: top; /* Aligns content to the top of the column */
-    text-align: center; /* Centers the text inside each column */
+    vertical-align: top; /* Aligns content to the top */
+    text-align: center; /* Ensures centered text inside */
 }
 
 .blog-archive ul {
-    list-style: none; /* Removes bullet points */
+    list-style: none;
     padding: 0;
-    margin: 0 auto; /* Centers the list inside the td */
-    display: inline-block; /* Helps keep the list centered */
+    margin: 0 auto;
+    display: inline-block; /* Keeps the list centered */
 }
 
 .blog-archive li {
     text-align: center;
 }
 
-
-
-.update-log th {
-    font-weight: bold;
-}
-
+/* --- Final footer adjustments --- */
 footer {
     text-align: center;
-    padding: 100px;
+    padding: 20px; /* Reduced from 100px to prevent unnecessary space */
     font-size: 0.8em;
-    background-color: #fff;
-
 }
