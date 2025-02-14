@@ -145,6 +145,23 @@ footer {
     line-height: 1.5;
 }
 
+.card-grid { 
+    display: grid; grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */ 
+    grid-template-rows: repeat(3, 1fr); /* Creates 3 rows */ 
+    gap: 10px; /* Adds space between cards */ 
+    max-width: 600px; /* Keeps the layout compact */ 
+    margin: 20px auto; /* Centers the grid */ 
+    padding: 10px; background-color: #f9f9f9; /* Light background */ 
+    border-radius: 8px; /* Slightly rounded edges */ 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */ 
+} 
+
+.card-grid img { 
+    width: 100%; /* Ensures images fit in grid */ 
+    height: auto; /* Maintains aspect ratio */ 
+    border: 2px solid #ccc; /* Adds a card border */ 
+    border-radius: 5px; /* Softens edges slightly */ 
+}
 
 /* --- Responsive Table Fix (Keep Horizontal on Mobile) --- */
 @media screen and (max-width: 600px) {
@@ -173,20 +190,4 @@ footer {
     }
 }
 
-.card-grid { 
-    display: grid; grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */ 
-    grid-template-rows: repeat(3, 1fr); /* Creates 3 rows */ 
-    gap: 10px; /* Adds space between cards */ 
-    max-width: 600px; /* Keeps the layout compact */ 
-    margin: 20px auto; /* Centers the grid */ 
-    padding: 10px; background-color: #f9f9f9; /* Light background */ 
-    border-radius: 8px; /* Slightly rounded edges */ 
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */ 
-} 
 
-.card-grid img { 
-    width: 100%; /* Ensures images fit in grid */ 
-    height: auto; /* Maintains aspect ratio */ 
-    border: 2px solid #ccc; /* Adds a card border */ 
-    border-radius: 5px; /* Softens edges slightly */ 
-}
