@@ -59,6 +59,15 @@ main {
 .update-log td:first-child {
     width: 15%; /* Date column */
 }
+
+.update-log td:nth-child(2) {
+    width: 20%; /* Section column */
+}
+
+.update-log td:last-child {
+    width: 65%; /* Entry text gets the most space */
+    white-space: normal; /* Allows wrapping only in this column */
+}
 .update-blog {
     width: 100%;
     font-size: 14px;
