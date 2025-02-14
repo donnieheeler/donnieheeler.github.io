@@ -1,34 +1,102 @@
+body {
+    font-family: Arial, serif;
+    background-color: #fff;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px; /* Reduce space below DH */
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+main {
+    max-width: 800px;
+    margin: 10px auto;
+    background-color: #fff;
+    padding: 5px;
+}
+
 .update-log {
-    width: 100%;  /* Make sure the table takes up full width */
-    max-width: 800px; /* Keeps it readable and prevents stretching too wide */
-    margin: 0 auto; /* Centers the table */
+    width: 50%;
     border-collapse: collapse;
     font-size: 14px;
-    table-layout: fixed; /* Ensures columns get proper spacing */
+    table-layout: fixed;
 }
 
 .update-log th, .update-log td {
     border-bottom: 1px solid #ccc;
-    padding: 10px; /* Reduce from 100px to 10px */
+    padding: 5px;
     text-align: left;
-    white-space: nowrap; /* Prevents text wrapping */
+    white-space: nowrap;
 }
 
-.update-log td:first-child {
-    width: 15%; /* Date column */
+.update-blog {
+    width: 100%;
+    font-size: 14px;
 }
 
-.update-log td:nth-child(2) {
-    width: 20%; /* Section column */
+.update-blog th, .update-log td {
+    padding: 100px;
+    text-align: left;
 }
 
-.update-log td:last-child {
-    width: 65%; /* Entry text gets the most space */
-    white-space: normal; /* Allows wrapping only in this column */
+.blog-archive {
+    width: 100%; /* Reduce table width so it doesn't stretch */
+    margin: 0 auto; /* Centers the whole table */
+    text-align: center; /* Ensures everything inside is centered */
+}
+
+.blog-archive td {
+    width: 0%; /* Ensures equal width for both columns */
+    vertical-align: top; /* Aligns content to the top of the column */
+    text-align: center; /* Centers the text inside each column */
+}
+
+.blog-archive ul {
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0 auto; /* Centers the list inside the td */
+    display: inline-block; /* Helps keep the list centered */
+}
+
+.blog-archive li {
+    text-align: center;
+}
+
+
+
+.update-log th {
+    font-weight: bold;
 }
 
 footer {
     text-align: center;
-    padding: 20px; /* Reduce from 100px */
+    padding: 100px;
     font-size: 0.8em;
+    background-color: #fff;
+
 }
