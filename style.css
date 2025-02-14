@@ -116,22 +116,29 @@ footer {
     font-size: 0.8em;
 }
 
-/* --- Mobile Fix for Table Overlap --- */
+/* --- Responsive Table Fix (Keep Horizontal on Mobile) --- */
 @media screen and (max-width: 600px) {
     .update-log {
-        table-layout: auto; /* Allows table to resize dynamically */
+        table-layout: fixed; /* Keeps even spacing */
+        width: 100%;
     }
 
     .update-log td {
-        display: block; /* Makes each row stack vertically on small screens */
-        width: 100%; /* Ensures text doesn’t squeeze */
-        text-align: left; /* Aligns text properly */
-        white-space: normal; /* Allows proper wrapping */
+        display: table-cell; /* Keep table cells in one row */
+        width: auto;
+        text-align: left;
+        white-space: normal; /* Allows wrapping only in the last column */
     }
 
-    .update-log td:first-child, 
-    .update-log td:nth-child(2), 
+    .update-log td:first-child {
+        width: 25%; /* Adjust date column width */
+    }
+
+    .update-log td:nth-child(2) {
+        width: 25%; /* Adjust section column width */
+    }
+
     .update-log td:last-child {
-        width: 100%; /* Each column takes full width on mobile */
+        width: 50%; /* Give entry text more space */
     }
 }
