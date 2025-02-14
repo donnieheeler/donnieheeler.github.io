@@ -44,6 +44,7 @@ main {
     width: 100%;
     border-collapse: collapse;
     font-size: 14px;
+    table-layout: fixed;
 }
 
 .update-log th, .update-log td {
