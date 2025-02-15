@@ -229,33 +229,35 @@ font-size: 24px;
 font-weight: bold; 
 cursor: pointer; 
 }
+
 @media (max-width: 600px) {
     .modal-content {
-        width: 92%; /* Adjusted width for better balance */
-        max-width: 450px; /* Slightly wider but not too much */
-        padding: 15px; /* Keep padding controlled */
+        width: 95%; /* Take up almost full width */
+        max-width: 420px; /* Keeps it balanced */
+        padding: 15px;
     }
 
     .modal-title {
-        font-size: 1.4em; /* Slightly smaller title to prevent wrapping */
+        font-size: 1.3em; /* Slightly smaller */
         text-align: center;
         word-wrap: break-word;
-        max-width: 90%; /* Ensures title doesn’t stretch too much */
+        max-width: 85%; /* Prevents stretching */
         margin: 0 auto;
     }
 
     .modal-image {
-        width: 100%; /* Makes the image responsive */
-        max-width: 350px; /* Keeps it from getting too big */
+        width: 100%; /* Makes sure the card fits */
+        max-width: 350px; /* Prevents it from getting too big */
         display: block;
-        margin: 10px auto; /* Centers it */
+        margin: 10px auto; /* Centers it properly */
     }
 
     .modal-details {
-        font-size: 1em; /* Keep text readable */
+        font-size: 1em; /* Normal readable size */
         text-align: center;
-        max-width: 95%;
-        margin: 0 auto;
+        max-width: 90%; /* Keeps text from spreading too far */
+        margin: 10px auto;
+        padding-bottom: 10px; /* Adds slight spacing below */
     }
 }
 
