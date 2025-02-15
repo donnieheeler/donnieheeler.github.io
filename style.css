@@ -16,6 +16,11 @@ header {
     background-color: #fff;
 }
 
+.thin-d {
+    font-family: "Times New Roman", serif; /* Classic thin font */
+    font-weight: 300; /* Makes it thinner */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
