@@ -233,12 +233,12 @@ cursor: pointer;
 @media (max-width: 600px) {
     .modal-content {
         width: 95%; /* Take up almost full width */
-        max-width: 420px; /* Keeps it balanced */
+        max-width: 350px; /* Keeps it balanced */
         padding: 15px;
     }
 
     .modal-title {
-        font-size: 1.3em; /* Slightly smaller */
+        font-size: 1em; /* Slightly smaller */
         text-align: center;
         word-wrap: break-word;
         max-width: 85%; /* Prevents stretching */
