@@ -23,10 +23,12 @@ const cardData = [
 
 // Function to open modal with card info 
 function openModal(cardTitle, imgSrc, details) {
-    modalDetails.innerHTML = details; // Allows HTML formatting and set title
-    modalImage.src = imgSrc; // Set front image
-    modal.style.display = "block";
+    modalTitle.innerHTML = cardTitle; // Fix: Now updates the title
+    modalImage.src = imgSrc; //  Updates the image
+    modalDetails.innerHTML = details; // Allows HTML formatting in description
+    modal.style.display = "block"; // Shows the modal
 }
+
 
 // Close modal when clicking the close button 
 closeButton.addEventListener("click", function() { 
