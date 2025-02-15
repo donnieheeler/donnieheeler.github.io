@@ -46,5 +46,3 @@ document.querySelectorAll(".card-grid img").forEach((card, index) => {
         openModal(cardInfo.title, cardInfo.frontImage, cardInfo.details);
     });
 });
-
-});
