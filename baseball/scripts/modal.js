@@ -11,12 +11,17 @@ const cardData = [
     {
         title: "Francisco Lindor - 2024 Topps Heritage",
         frontImage: "images/lindor_example.jpg",
-        details: "Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets."
+        details: "Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets.
+          
+          Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets.
+
+  Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets.
+    
+    "
     },
     {
-        title: "Ty Cobb - 1911 T205 Gold Border",
-        frontImage: "images/cobb-front.jpg",
-        backImage: "images/cobb-back.jpg",
+        title: "Brandon Nimmo - Test Test Test Test Test Test 1999 1999 1999",
+        frontImage: "images/bnimmo_asbn.png",
         details: "A rare Ty Cobb T205 Gold Border card from 1911."
     }
 ];
