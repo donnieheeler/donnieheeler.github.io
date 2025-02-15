@@ -36,7 +36,6 @@ const cardData = [
     {
         title: "Francisco Lindor - 2024 Topps Heritage",
         frontImage: "images/lindor_example.jpg",
-        backImage: "images/lindor-back.jpg",
         details: "Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets."
     },
     {
