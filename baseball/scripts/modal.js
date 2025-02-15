@@ -11,12 +11,11 @@ const cardData = [
     {
         title: "Francisco Lindor - 2024 Topps Heritage",
         frontImage: "images/lindor_example.jpg",
-        backImage: "images/lindor-back.jpg",
         details: "<strong>Position:</strong> Shortstop <br> <strong>Team:</strong> New York Mets <br> <strong>Year:</strong> 2024"
     },
     {
         title: "Brandon Nimmo - 2019 Archives Snapshots",
-        frontImage: "images/bnimmo_asbn.png,
+        frontImage: "images/bnimmo_asbn.png",
         details: "<strong>Card Set:</strong> T205 Gold Border <br> <strong>Year:</strong> 1911 <br> <strong>Historical Significance:</strong> One of the rarest early baseball cards."
     }
 ];
@@ -24,9 +23,8 @@ const cardData = [
 
 // Function to open modal with card info 
 function openModal(cardTitle, imgSrc, details) {
-    modalDetails.innerHTML = details; // Allows HTML formatting // Set title
+    modalDetails.innerHTML = details; // Allows HTML formatting and set title
     modalImage.src = imgSrc; // Set front image
-    modalDetails.textContent = details; // Set description
     modal.style.display = "block";
 }
 
