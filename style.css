@@ -261,6 +261,18 @@ cursor: pointer;
     }
 }
 
+@media (max-width: 600px) {
+    .close {
+        font-size: 24px; /* Make it slightly bigger */
+        top: 12px; /* Moves it down a bit */
+        right: 15px; /* Adjusts position */
+        width: 32px; /* Makes sure it’s easier to tap */
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 /* --- Responsive Table Fix (Keep Horizontal on Mobile) --- */
 @media screen and (max-width: 600px) {
