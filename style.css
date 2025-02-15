@@ -214,7 +214,7 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 
 #cardImage {
     width: 100%; /* Ensures the image fills its container */
-    max-width: 275px; /* Maximum size, adjust as necessary */
+    max-width: 400px; /* Maximum size, adjust as necessary */
     height: auto; /* Maintain the aspect ratio */
     margin: 0 auto; /* Center the image */
     display: block;
@@ -231,22 +231,24 @@ cursor: pointer;
 }
 @media (max-width: 600px) {
     .modal-content {
-        width: 95%; /* Use almost full screen width */
-        max-width: 500px; /* Prevent it from being too wide */
-        padding: 15px; /* Reduce padding */
+        width: 92%; /* Adjusted width for better balance */
+        max-width: 450px; /* Slightly wider but not too much */
+        padding: 15px; /* Keep padding controlled */
     }
 
     .modal-title {
-        font-size: 1.3em; /* Keep title readable */
+        font-size: 1.4em; /* Slightly smaller title to prevent wrapping */
         text-align: center;
         word-wrap: break-word;
+        max-width: 90%; /* Ensures title doesn’t stretch too much */
+        margin: 0 auto;
     }
 
     .modal-image {
-        width: 90%; /* Make sure image scales well */
-        max-width: 320px; /* Prevent it from being too big */
+        width: 100%; /* Makes the image responsive */
+        max-width: 350px; /* Keeps it from getting too big */
         display: block;
-        margin: 10px auto;
+        margin: 10px auto; /* Centers it */
     }
 
     .modal-details {
@@ -256,6 +258,7 @@ cursor: pointer;
         margin: 0 auto;
     }
 }
+
 
 /* --- Responsive Table Fix (Keep Horizontal on Mobile) --- */
 @media screen and (max-width: 600px) {
