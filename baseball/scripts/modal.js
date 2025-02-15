@@ -5,6 +5,22 @@ const modalImage = document.getElementById("cardImage");
 const modalDetails = document.getElementById("cardDetails"); 
 const closeButton = document.querySelector(".close"); 
 
+  
+  // Card Data (Add more as needed)
+const cardData = [
+    {
+        title: "Francisco Lindor - 2024 Topps Heritage",
+        frontImage: "images/lindor_example.jpg",
+        details: "Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets."
+    },
+    {
+        title: "Ty Cobb - 1911 T205 Gold Border",
+        frontImage: "images/cobb-front.jpg",
+        backImage: "images/cobb-back.jpg",
+        details: "A rare Ty Cobb T205 Gold Border card from 1911."
+    }
+];
+
 // Function to open modal with card info 
 function openModal(cardTitle, imgSrc, details) {
     modalTitle.textContent = cardTitle; // Set title
@@ -30,20 +46,5 @@ document.querySelectorAll(".card-grid img").forEach((card, index) => {
         openModal(cardInfo.title, cardInfo.frontImage, cardInfo.details);
     });
 });
-  
-  // Card Data (Add more as needed)
-const cardData = [
-    {
-        title: "Francisco Lindor - 2024 Topps Heritage",
-        frontImage: "images/lindor_example.jpg",
-        details: "Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets."
-    },
-    {
-        title: "Ty Cobb - 1911 T205 Gold Border",
-        frontImage: "images/cobb-front.jpg",
-        backImage: "images/cobb-back.jpg",
-        details: "A rare Ty Cobb T205 Gold Border card from 1911."
-    }
-];
 
 });
