@@ -11,19 +11,20 @@ const cardData = [
     {
         title: "Francisco Lindor - 2024 Topps Heritage",
         frontImage: "images/lindor_example.jpg",
-        details: "Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets. Going to try and figure out if this text wraps or what and if it doesn't im gonna be pissed. I had a good thing going."
-
+        backImage: "images/lindor-back.jpg",
+        details: "<strong>Position:</strong> Shortstop <br> <strong>Team:</strong> New York Mets <br> <strong>Year:</strong> 2024"
     },
     {
-        title: "Brandon Nimmo - Test Test Test Test Test Test 1999 1999 1999",
-        frontImage: "images/bnimmo_asbn.png",
-        details: "A rare Ty Cobb T205 Gold Border card from 1911."
+        title: "Brandon Nimmo - 2019 Archives Snapshots",
+        frontImage: "images/bnimmo_asbn.png,
+        details: "<strong>Card Set:</strong> T205 Gold Border <br> <strong>Year:</strong> 1911 <br> <strong>Historical Significance:</strong> One of the rarest early baseball cards."
     }
 ];
 
+
 // Function to open modal with card info 
 function openModal(cardTitle, imgSrc, details) {
-    modalTitle.textContent = cardTitle; // Set title
+    modalDetails.innerHTML = details; // Allows HTML formatting // Set title
     modalImage.src = imgSrc; // Set front image
     modalDetails.textContent = details; // Set description
     modal.style.display = "block";
