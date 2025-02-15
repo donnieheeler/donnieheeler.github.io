@@ -8,7 +8,9 @@ const closeButton = document.querySelector(".close");
 // Function to open modal with card info 
 function openModal(cardTitle, imgSrc, details) { 
   modalTitle.textContent = cardTitle; 
-  modalImage.src = imgSrc; 
+  modalImage.src = imgSrc;
+  modalImage.style.width = "300px";  // Forces width in the modal
+  modalImage.style.height = "auto"; // Ensures aspect ratio remains correct 
   modalDetails.textContent = details; 
   modal.style.display = "block"; } 
 
