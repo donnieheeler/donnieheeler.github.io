@@ -6,13 +6,12 @@ const modalDetails = document.getElementById("cardDetails");
 const closeButton = document.querySelector(".close"); 
 
 // Function to open modal with card info 
-function openModal(cardTitle, imgSrc, details) { 
-  modalTitle.textContent = cardTitle; 
-  modalImage.src = imgSrc;
-  modalImage.style.width = "300px";  // Forces width in the modal
-  modalImage.style.height = "auto"; // Ensures aspect ratio remains correct 
-  modalDetails.textContent = details; 
-  modal.style.display = "block"; } 
+function openModal(cardTitle, imgSrc, details) {
+    modalTitle.textContent = cardTitle; // Set title
+    modalImage.src = imgSrc; // Set front image
+    modalDetails.textContent = details; // Set description
+    modal.style.display = "block";
+}
 
 // Close modal when clicking the close button 
 closeButton.addEventListener("click", function() { 
@@ -25,11 +24,27 @@ window.addEventListener("click", function(event) {
   } 
 }); 
 
-// Attach click events to all cards 
-document.querySelectorAll(".card-grid img").forEach((card, index) => { 
-  card.addEventListener("click", function() { 
-    const cardTitle = `Card ${index + 1}`; // Placeholder title 
-    const cardDetails = "This is a placeholder description for the card."; 
-    openModal(cardTitle, card.src, cardDetails); 
-  }); 
+document.querySelectorAll(".card-grid img").forEach((card, index) => {
+    card.addEventListener("click", function() {
+        const cardInfo = cardData[index]; // Get the correct card info
+        openModal(cardInfo.title, cardInfo.frontImage, cardInfo.details);
+    });
+});
+  
+  // Card Data (Add more as needed)
+const cardData = [
+    {
+        title: "Francisco Lindor - 2024 Topps Heritage",
+        frontImage: "images/lindor_example.jpg",
+        backImage: "images/lindor-back.jpg",
+        details: "Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets."
+    },
+    {
+        title: "Ty Cobb - 1911 T205 Gold Border",
+        frontImage: "images/cobb-front.jpg",
+        backImage: "images/cobb-back.jpg",
+        details: "A rare Ty Cobb T205 Gold Border card from 1911."
+    }
+];
+
 });
