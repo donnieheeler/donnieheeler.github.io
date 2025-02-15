@@ -9,14 +9,14 @@ const closeButton = document.querySelector(".close");
   // Card Data (Add more as needed)
 const cardData = [
     {
-        title: "Francisco Lindor - 2024 Topps Heritage",
+        title: "<strong><i>Francisco Lindor - 2024 Topps Heritage</i></strong>",
         frontImage: "images/lindor_example.jpg",
-        details: "<strong>Position:</strong> Shortstop <br> <strong>Team:</strong> New York Mets <br> <strong>Year:</strong> 2024"
+        details: "<strong>Description:</strong> Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets."
     },
     {
         title: "Brandon Nimmo - 2019 Archives Snapshots",
         frontImage: "images/bnimmo_asbn.png",
-        details: "<strong>Card Set:</strong> T205 Gold Border <br> <strong>Year:</strong> 1911 <br> <strong>Historical Significance:</strong> One of the rarest early baseball cards."
+        details: "<strong>Card Set:</strong> Auto"
     }
 ];
 
