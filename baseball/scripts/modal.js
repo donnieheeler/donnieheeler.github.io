@@ -19,7 +19,7 @@ const cardData = [
         details: "<strong>Description:</strong> This Brandon Nimmo 2019 Archives Snapshots autograph (#03/50) is a standout in my collection. The deep blue border, dramatic sky, and Nimmo’s determined look make it feel like a moment frozen in time—bold, striking, and unforgettable."
     },
     {
-        title: "Ichiro - 2024 Stadium Club<br><small>☆ Red Parallel</small><br><small>☆ Autographed</small>",
+        title: "Ichiro - 2024 Stadium Club<br><small>☆ Red Parallel</small>",
         frontImage: "images/ichiro_244.png",
         details: "<strong>Description:</strong> This 2024 Topps Stadium Club Red parallel captures Ichiro’s unique style—blazing speed, precision hitting, and pure baseball artistry. He played the game differently, turning every at-bat into something unpredictable and unforgettable."
     }
