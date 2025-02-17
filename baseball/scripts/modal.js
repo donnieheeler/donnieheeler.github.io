@@ -9,14 +9,14 @@ const body = document.body; // Reference to body
 // Card Data (Add more as needed)
 const cardData = [
     {
-        title: "<i>Francisco Lindor - 2024 Topps Heritage</i>",
+        title: "<strong><i>Francisco Lindor - 2024 Topps Heritage</i></strong>",
         frontImage: "images/lindor_example.jpg",
         details: "<strong>Description:</strong> Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets."
     },
     {
-        title: "<i>Brandon Nimmo - 2019 Archives Snapshots</i><br><p>☆ Numbered: 03/50</p><br><p>☆ Autographed</p>",
+        title: "Brandon Nimmo - 2019 Archives Snapshots",
         frontImage: "images/bnimmo_asbn.png",
-        details: "<strong>Card Set:</strong> Archives Snapshots <br> <strong>Special:</strong> Limited Edition"
+        details: "<strong>Card Set:</strong> Auto"
     }
 ];
 
