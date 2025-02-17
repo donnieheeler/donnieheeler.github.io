@@ -140,6 +140,12 @@ header {
     z-index: 10;
 }
 
+@media (max-width: 768px) {
+    .banner {
+        display: none;
+    }
+}
+
 
 /* --- Final footer adjustments --- */
 footer {
