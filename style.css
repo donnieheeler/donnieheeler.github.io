@@ -119,6 +119,28 @@ main {
     text-align: center;
 }
 
+.banner {
+    position: absolute;
+    top: 10px; /* Adjusts distance from the top */
+    width: 120px; /* Adjust width as needed */
+    height: auto; /* Keeps aspect ratio */
+}
+
+.left-banner {
+    left: 10px; /* Positions it at the top left */
+}
+
+.right-banner {
+    right: 10px; /* Positions it at the top right */
+}
+
+/* Ensures the header doesn't overlap */
+header {
+    position: relative;
+    z-index: 10;
+}
+
+
 /* --- Final footer adjustments --- */
 footer {
     text-align: center;
