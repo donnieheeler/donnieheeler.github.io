@@ -22,29 +22,29 @@ const cardData = [
 
 // Function to open modal with card info 
 function openModal(cardTitle, imgSrc, details) {
-    modalTitle.innerHTML = cardTitle; // Fix: Now updates the title
-    modalImage.src = imgSrc; //  Updates the image
+    modalTitle.innerHTML = cardTitle; // Updates the title
+    modalImage.src = imgSrc; // Updates the image
     modalDetails.innerHTML = details; // Allows HTML formatting in description
     modal.style.display = "block"; // Shows the modal
 
-    // **Disable background scrolling**
+    // Disable background scrolling
     body.classList.add("modal-open");
 }
 
 // Function to close modal properly
 function closeModal() {
     modal.style.display = "none";
-    body.classList.remove("modal-open"); // Re-enable scrolling when modal closes
+    body.classList.remove("modal-open"); // Re-enable background scrolling
 }
 
 // Close modal when clicking the close button 
 closeButton.addEventListener("click", closeModal);
 
-// Close modal when clicking outside of it 
+// Close modal when clicking outside of it (only if clicking directly on the modal background)
 window.addEventListener("click", function(event) { 
-  if (event.target === modal) { 
-    closeModal(); // Fix: Calls proper close function
-  } 
+    if (event.target === modal) { 
+        closeModal(); 
+    } 
 });
 
 // Attach event listeners to images for modal opening
