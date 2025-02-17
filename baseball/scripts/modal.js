@@ -20,7 +20,7 @@ const cardData = [
     },
     {
         title: "Ichiro - 2024 Stadium Club<br><small>☆ Red Parallel</small><br><small>☆ Autographed</small>",
-        frontImage: "images/bnimmo_asbn.png",
+        frontImage: "images/ichiro_244.png",
         details: "<strong>Description:</strong> This 2024 Topps Stadium Club Red parallel captures Ichiro’s unique style—blazing speed, precision hitting, and pure baseball artistry. He played the game differently, turning every at-bat into something unpredictable and unforgettable."
     }
 ];
