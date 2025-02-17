@@ -5,8 +5,8 @@ const modalImage = document.getElementById("cardImage");
 const modalDetails = document.getElementById("cardDetails"); 
 const closeButton = document.querySelector(".close"); 
 const body = document.body; // Reference to body
-  
-  // Card Data (Add more as needed)
+
+// Card Data (Add more as needed)
 const cardData = [
     {
         title: "<strong><i>Francisco Lindor - 2024 Topps Heritage</i></strong>",
@@ -20,7 +20,6 @@ const cardData = [
     }
 ];
 
-
 // Function to open modal with card info 
 function openModal(cardTitle, imgSrc, details) {
     modalTitle.innerHTML = cardTitle; // Fix: Now updates the title
@@ -28,24 +27,27 @@ function openModal(cardTitle, imgSrc, details) {
     modalDetails.innerHTML = details; // Allows HTML formatting in description
     modal.style.display = "block"; // Shows the modal
 
-  // **Disable background scrolling**
+    // **Disable background scrolling**
     body.classList.add("modal-open");
 }
 
+// Function to close modal properly
+function closeModal() {
+    modal.style.display = "none";
+    body.classList.remove("modal-open"); // Re-enable scrolling when modal closes
+}
 
 // Close modal when clicking the close button 
-closeButton.addEventListener("click", function() { 
-  modal.style.display = "none"; }); 
-
-closeButton.addEventListener("click", closeModal); 
+closeButton.addEventListener("click", closeModal);
 
 // Close modal when clicking outside of it 
 window.addEventListener("click", function(event) { 
   if (event.target === modal) { 
-    modal.style.display = "none"; 
+    closeModal(); // Fix: Calls proper close function
   } 
-}); 
+});
 
+// Attach event listeners to images for modal opening
 document.querySelectorAll(".card-grid img").forEach((card, index) => {
     card.addEventListener("click", function() {
         const cardInfo = cardData[index]; // Get the correct card info
