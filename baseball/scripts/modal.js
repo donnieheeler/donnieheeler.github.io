@@ -16,7 +16,7 @@ const cardData = [
     {
         title: "Brandon Nimmo - 2019 Archives Snapshots<br><small>☆ Numbered: 03/50</small><br><small>☆ Autographed</small>",
         frontImage: "images/bnimmo_asbn.png",
-        details: "This Brandon Nimmo 2019 Archives Snapshots autograph, numbered 03/50, is a true gem in my collection. The deep blue border perfectly complements the Mets uniform, while the sky in the background gives the card an almost cinematic feel. Nimmo’s focused, determined expression adds to the intensity, making it more than just a card—it’s a moment frozen in time. The bold, on-card autograph seals the deal, making this a piece I’ll always appreciate."
+        details: "<strong>Description:</strong> This Brandon Nimmo 2019 Archives Snapshots autograph, numbered 03/50, is a true gem in my collection. The deep blue border perfectly complements the Mets uniform, while the sky in the background gives the card an almost cinematic feel. Nimmo’s focused, determined expression adds to the intensity, making it more than just a card—it’s a moment frozen in time. The bold, on-card autograph seals the deal, making this a piece I’ll always appreciate."
     }
 ];
 
