@@ -27,14 +27,18 @@ function openModal(cardTitle, imgSrc, details) {
     modalDetails.innerHTML = details; // Allows HTML formatting in description
     modal.style.display = "block"; // Shows the modal
 
-    // Disable background scrolling & enable full-page modal scrolling
-    body.style.overflow = "hidden";
+    // Disable background scrolling
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
 }
 
 // Function to close modal properly
 function closeModal() {
     modal.style.display = "none";
-    body.style.overflow = "auto"; // Re-enable background scrolling
+
+    // Re-enable background scrolling
+    document.documentElement.style.overflow = "auto";
+    document.body.style.overflow = "auto";
 }
 
 // Close modal when clicking the close button 
