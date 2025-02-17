@@ -280,13 +280,6 @@ body.modal-open {
     touch-action: none; /* Stops touch-based scrolling */
 }
 
-/* Allow scrolling inside the modal */
-.modal-content {
-    max-height: 80vh; /* Prevents it from growing too tall */
-    overflow-y: auto; /* Enables scrolling */
-    padding: 15px; /* Ensures content doesn't stick */
-}
-
 #cardImage {
     width: 100%; /* Ensures the image fills its container */
     max-width: 400px; /* Maximum size, adjust as necessary */
