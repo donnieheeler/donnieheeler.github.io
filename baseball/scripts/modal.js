@@ -4,7 +4,7 @@ const modalTitle = document.getElementById("cardTitle");
 const modalImage = document.getElementById("cardImage"); 
 const modalDetails = document.getElementById("cardDetails"); 
 const closeButton = document.querySelector(".close"); 
-
+const body = document.body; // Reference to body
   
   // Card Data (Add more as needed)
 const cardData = [
@@ -27,12 +27,17 @@ function openModal(cardTitle, imgSrc, details) {
     modalImage.src = imgSrc; //  Updates the image
     modalDetails.innerHTML = details; // Allows HTML formatting in description
     modal.style.display = "block"; // Shows the modal
+
+  // **Disable background scrolling**
+    body.classList.add("modal-open");
 }
 
 
 // Close modal when clicking the close button 
 closeButton.addEventListener("click", function() { 
   modal.style.display = "none"; }); 
+
+closeButton.addEventListener("click", closeModal); 
 
 // Close modal when clicking outside of it 
 window.addEventListener("click", function(event) { 
