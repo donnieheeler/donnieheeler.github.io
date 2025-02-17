@@ -201,6 +201,57 @@ footer {
     line-height: 1.5;
 }
 
+/* Profile Page Styling */
+.profile-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-container h2 {
+    border-bottom: 2px solid #222;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Profile Table */
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-table .label {
+    font-weight: bold;
+    width: 30%;
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    padding: 5px;
+    border-left: 4px solid #222;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
 
 .card-grid { 
     display: grid; 
