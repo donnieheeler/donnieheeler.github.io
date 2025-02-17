@@ -14,9 +14,9 @@ const cardData = [
         details: "<strong>Description:</strong> Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets."
     },
     {
-        title: "Brandon Nimmo - 2019 Archives Snapshots",
+        title: "<strong>Brandon Nimmo - 2019 Archives Snapshots</strong><br><small>☆ Numbered: 03/50</small><br><small>☆ Autographed</small>",
         frontImage: "images/bnimmo_asbn.png",
-        details: "<strong>Card Set:</strong> Auto"
+        details: "<strong>Card Set:</strong> Archives Snapshots <br> <strong>Special:</strong> Limited Edition"
     }
 ];
 
