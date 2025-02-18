@@ -26,7 +26,7 @@ const cardData = [
     {
         title: "<strong><i>Bartolo Colon - T206</i></strong>",
         frontImage: "images/bcolon_t206.PNG",
-        details: "<strong>Description:</strong>https://www.youtube.com/watch?v=OVFsq9FQBlc"
+        details: "<strong>Description:</strong><a href="https://www.youtube.com/watch?v=OVFsq9FQBlc"> Bartolo Colon Home Run</a>"
     },
     {
         title: "<strong><i>Aaron Judge - T210</i></strong>",
@@ -36,7 +36,7 @@ const cardData = [
     {
         title: "<strong><i>Lenny Randle - Hostess Cutout</i></strong><br><small>☆ Autographed</small>",
         frontImage: "images/lrandle_hostess.PNG",
-        details: "<strong>Description:</strong>https://www.youtube.com/watch?v=AJPpTXzPxFs"
+        details: "<strong>Description:</strong><a href="https://www.youtube.com/watch?v=AJPpTXzPxFs"> Lenny Randle Tackle</a>"
     },
     {
         title: "<strong><i>R.A. Dickey - T206</i></strong><br><small>☆ Autographed</small>",
