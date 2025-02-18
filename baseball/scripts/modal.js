@@ -39,7 +39,7 @@ const cardData = [
         details: "<strong>Description:</strong><a href="url">https://www.youtube.com/watch?v=AJPpTXzPxFs</a>"
     },
     {
-        title: "<strong><i>R.A. Dickey - T206</i></strong>><br><small>☆ Autographed</small>",
+        title: "<strong><i>R.A. Dickey - T206</i></strong><br><small>☆ Autographed</small>",
         frontImage: "images/radickey_t206.PNG",
         details: "<strong>Description:</strong> WIP"
     },
