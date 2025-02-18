@@ -9,19 +9,49 @@ const body = document.body; // Reference to body
 // Card Data (Add more as needed)
 const cardData = [
     {
-        title: "<strong><i>Francisco Lindor - 2024 Topps Heritage</i></strong>",
+        title: "<strong><i>Shoehei Ohtani - 2024 Series 2</i></strong><br><small>☆ Rainbow Foil Parallel</small>",
         frontImage: "images/lindor_example.jpg",
-        details: "<strong>Description:</strong> Francisco Lindor's 2024 Topps Heritage card featuring his time with the Mets."
+        details: "<strong>Description:</strong> WIP"
     },
     {
-        title: "Brandon Nimmo - 2019 Archives Snapshots<br><small>☆ Numbered: 03/50</small><br><small>☆ Autographed</small>",
+        title: "<strong><i>Brandon Nimmo - 2019 Archives Snapshots</i></strong><br><small>☆ Numbered: 03/50</small><br><small>☆ Autographed</small>",
         frontImage: "images/bnimmo_asbn_improved.png",
         details: "<strong>Description:</strong> This Brandon Nimmo 2019 Archives Snapshots autograph (#03/50) is a standout in my collection. The deep blue border, dramatic sky, and Nimmo’s determined look make it feel like a moment frozen in time—bold, striking, and unforgettable."
     },
     {
-        title: "Ichiro - 2024 Stadium Club<br><small>☆ Red Parallel</small>",
+        title: "<strong><i>Ichiro - 2024 Stadium Club</i></strong><br><small>☆ Red Parallel</small>",
         frontImage: "images/ichiro_244_improved.png",
         details: "<strong>Description:</strong> This 2024 Topps Stadium Club Red parallel captures Ichiro’s unique style—blazing speed, precision hitting, and pure baseball artistry. He played the game differently, turning every at-bat into something unpredictable and unforgettable."
+    },
+    {
+        title: "<strong><i>Bartolo Colon - T206</i></strong>",
+        frontImage: "images/bcolon_t206.PNG.png",
+        details: "<strong>Description:</strong> WIP"
+    },
+    {
+        title: "<strong><i>Bartolo Colon - T206</i></strong>",
+        frontImage: "images/judge_t210.png",
+       details: "<strong>Description:</strong> WIP"
+    },
+    {
+        title: "<strong><i>Lenny Randle - Hostess Cutout</i></strong>><br><small>☆ Autographed</small>",
+        frontImage: "images/lrandle_hostess.PNG",
+        details: "<strong>Description:</strong> WIP"
+    },
+    {
+        title: "<strong><i>R.A. Dickey - T206</i></strong>><br><small>☆ Autographed</small>",
+        frontImage: "images/radickey_t206.PNG",
+        details: "<strong>Description:</strong> WIP"
+    },
+    {
+        title: "<strong><i>Warren Spahn - 2017 Topps Archive</i></strong>",
+        frontImage: "images/wspahan_204.png",
+        details: "<strong>Description:</strong> WIP"
+    },
+    {
+        title: "<strong><i>Ty Cobb - 2009 Turkey Red</i></strong>",
+        frontImage: "images/tcobb_tr87.png",
+        details: "<strong>Description:</strong> WIP"
     }
 ];
 
