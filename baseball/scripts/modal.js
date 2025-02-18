@@ -26,7 +26,7 @@ const cardData = [
     {
         title: "<strong><i>Bartolo Colon - T206</i></strong>",
         frontImage: "images/bcolon_t206.PNG.png",
-        details: "<strong>Description:</strong> WIP"
+        details: "<strong>Description:</strong> https://www.youtube.com/watch?v=OVFsq9FQBlc"
     },
     {
         title: "<strong><i>Bartolo Colon - T206</i></strong>",
