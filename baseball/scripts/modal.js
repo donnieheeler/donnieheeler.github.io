@@ -10,7 +10,7 @@ const body = document.body; // Reference to body
 const cardData = [
     {
         title: "<strong><i>Shoehei Ohtani - 2024 Series 2</i></strong><br><small>☆ Rainbow Foil Parallel</small>",
-        frontImage: "images/lindor_example.jpg",
+        frontImage: "images/shohei_500.png",
         details: "<strong>Description:</strong> WIP"
     },
     {
