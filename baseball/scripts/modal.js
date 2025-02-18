@@ -25,13 +25,13 @@ const cardData = [
     },
     {
         title: "<strong><i>Bartolo Colon - T206</i></strong>",
-        frontImage: "images/bcolon_t206.PNG.png",
+        frontImage: "images/bcolon_t206.PNG",
         details: "<strong>Description:</strong> https://www.youtube.com/watch?v=OVFsq9FQBlc"
     },
     {
-        title: "<strong><i>Bartolo Colon - T206</i></strong>",
+        title: "<strong><i>Aaron Judge - T210</i></strong>",
         frontImage: "images/judge_t210.png",
-       details: "<strong>Description:</strong> WIP"
+       details: "<strong>Description:</strong> My favorite baseball card."
     },
     {
         title: "<strong><i>Lenny Randle - Hostess Cutout</i></strong><br><small>☆ Autographed</small>",
