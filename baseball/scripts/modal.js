@@ -31,7 +31,7 @@ const cardData = [
     {
         title: "<strong><i>Aaron Judge - T210</i></strong>",
         frontImage: "images/judge_t210.png",
-       details: "<strong>Description:</strong> My favorite baseball card."
+       details: "<strong>Description:</strong> This card changed everything for me. The timeless black-and-white shot, framed in bold red, captures Aaron Judge in a rare, almost awkwardly beautiful moment of his swing—power, precision, and grace all at once. It’s a reminder of baseball’s enduring beauty and of a legend already in the making. My favorite baseball card."
     },
     {
         title: "<strong><i>Lenny Randle - Hostess Cutout</i></strong><br><small>☆ Autographed</small>",
