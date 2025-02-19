@@ -316,7 +316,7 @@ text-align: initial;
 /* Title */
 .modal-title {
     font-size: 1.5em; /* Reduce title size */
-    text-align: center; /* Center the title */
+    text-align: center !important; /* Center the title */
     word-wrap: break-word; /* Ensure long words wrap */
 }
 
@@ -372,7 +372,7 @@ cursor: pointer;
 
     .modal-title {
         font-size: 1em; /* Slightly smaller */
-        text-align: center;
+        text-align: center !important;
         word-wrap: break-word;
         max-width: 85%; /* Prevents stretching */
         margin: 0 auto;
