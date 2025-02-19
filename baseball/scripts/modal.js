@@ -36,7 +36,13 @@ const cardData = [
     {
         title: "<strong><i>Lenny Randle - Hostess Cutout</i></strong><br><small>☆ Autographed</small>",
         frontImage: "images/lrandle_hostess.PNG",
-       details: "<strong>Description:</strong> WIP"
+       details: `
+    <strong>Description:</strong> 
+    Check out the video: 
+    <a href="https://youtu.be/AJPpTXzPxFs?si=_Or8Tt8AaATkRSGk" target="_blank" rel="noopener">
+      YouTube Link
+    </a>
+  `
     },
     {
         title: "<strong><i>R.A. Dickey - T206</i></strong><br><small>☆ Autographed</small>",
