@@ -387,7 +387,7 @@ cursor: pointer;
 
     .modal-details {
         font-size: 1em; /* Normal readable size */
-        text-align: center;
+        text-align: left;
         max-width: 90%; /* Keeps text from spreading too far */
         margin: 10px auto;
         padding-bottom: 10px; /* Adds slight spacing below */
