@@ -310,7 +310,7 @@ border-radius: 10px;
 width: 100%; 
 max-width: 500px;
 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-text-align: center; /* Ensure modal itself is centered */
+text-align: initial !important;
 } 
 
 /* Title */
