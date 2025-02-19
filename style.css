@@ -331,7 +331,7 @@ box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 /* Details */
 .modal-details {
     font-size: 1em; /* Keep text readable */
-    text-align: center; /* Center align details */
+    text-align: left; /* Center align details */
     max-width: 90%;
     margin: 0 auto;
 }
