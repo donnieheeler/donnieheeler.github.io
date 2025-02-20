@@ -430,7 +430,7 @@ cursor: pointer;
     justify-content: center;
     height: auto; /* Don’t force 100vh on mobile */
     margin: 0;
-    padding-top: 20px; /* Tweak as needed to get the right spacing */
+    padding-top: 200px; /* Tweak as needed to get the right spacing */
   }
 }
 
