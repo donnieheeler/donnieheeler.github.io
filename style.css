@@ -422,6 +422,17 @@ cursor: pointer;
   cursor: pointer;
 }
 
+/* At the bottom of style.css, after the .landing-page block */
+@media (max-width: 600px) {
+  .landing-page {
+    /* Still use flex, but push the image up */
+    align-items: flex-start; 
+    justify-content: center;
+    height: auto; /* Don’t force 100vh on mobile */
+    margin: 0;
+    padding-top: 20px; /* Tweak as needed to get the right spacing */
+  }
+}
 
 /* --- Responsive Table Fix (Keep Horizontal on Mobile) --- */
 @media screen and (max-width: 600px) {
