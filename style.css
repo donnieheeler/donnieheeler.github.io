@@ -407,6 +407,16 @@ cursor: pointer;
     }
 }
 
+/* Put this at the bottom of your CSS or below the rest of your styles */
+@media (max-width: 600px) {
+  body {
+    display: block;  /* instead of flex */
+    height: auto;    /* rather than 100vh */
+    text-align: center; 
+    padding-top: 50px;  /* adjust this to taste */
+  }
+}
+
 /* --- Responsive Table Fix (Keep Horizontal on Mobile) --- */
 @media screen and (max-width: 600px) {
     .update-log {
