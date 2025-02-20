@@ -407,7 +407,6 @@ cursor: pointer;
     }
 }
 
-/* Desktop/larger screens: center the landing page */
 .landing-page {
   display: flex;
   justify-content: center;
@@ -417,18 +416,12 @@ cursor: pointer;
   background-color: #fff;
 }
 
-/* ... all your other site-wide styles remain untouched ... */
-
-/* Then override the landing page on small screens */
-@media (max-width: 600px) {
-  .landing-page {
-    display: block;
-    height: auto;
-    margin: 0;
-    text-align: center;
-    padding-top: 50px; /* adjust to taste */
-  }
+.landing-page a img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
 }
+
 
 /* --- Responsive Table Fix (Keep Horizontal on Mobile) --- */
 @media screen and (max-width: 600px) {
