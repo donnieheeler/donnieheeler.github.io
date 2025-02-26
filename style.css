@@ -267,6 +267,13 @@ footer {
     margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+    .nyg-page .baseball-card {
+        max-width: 100%; /* Ensures it never overflows its container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
 .card-grid { 
     display: grid; 
     grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */ 
