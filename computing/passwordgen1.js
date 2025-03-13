@@ -2,21 +2,27 @@ async function generatePassword() {
     let password = "";
     let wikipediaPages = [];
     let words = [];
+    let wordSelections = [];
 
     for (let i = 0; i < 3; i++) {
         let response = await fetch("https://en.wikipedia.org/api/rest_v1/page/random/summary");
         let data = await response.json();
 
-        let url = "https://en.wikipedia.org/wiki/" + encodeURIComponent(data.title);
-        wikipediaPages.push(url);
+        let title = data.title;
+        let url = "https://en.wikipedia.org/wiki/" + encodeURIComponent(title);
+        wikipediaPages.push({ title, url });
 
         let wordArray = data.extract.split(/\s+/).filter(word => word.length > 2); // Remove short words
-        let randomIndex = Math.floor(Math.random() * wordArray.length);
         
         if (wordArray.length > 0) {
-            words.push(wordArray[randomIndex]);
+            let randomIndex = Math.floor(Math.random() * wordArray.length);
+            let selectedWord = wordArray[randomIndex];
+
+            words.push(selectedWord);
+            wordSelections.push({ title, index: randomIndex + 1, word: selectedWord }); // +1 to make index human-readable
         } else {
-            words.push("FallbackWord"); // Avoid empty words
+            words.push("FallbackWord");
+            wordSelections.push({ title, index: 1, word: "FallbackWord" });
         }
     }
 
@@ -27,7 +33,10 @@ async function generatePassword() {
     password = words.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join("") + digits + specialChar;
 
     document.getElementById("output").innerHTML =
-        `<p><strong>Generated Password:</strong> ${password}</p>` +
-        `<p><strong>Wikipedia Pages Used:</strong></p>` +
-        wikipediaPages.map(url => `<p><a href='${url}' target='_blank'>${url}</a></p>`).join('');
+        wordSelections.map(selection => 
+            `<p><strong>${selection.title}</strong> - ${selection.index}th word - "<strong>${selection.word}</strong>"</p>`
+        ).join('') +
+        `<p><strong>Numbers generated:</strong> ${digits}</p>` +
+        `<p><strong>Symbol Generated:</strong> ${specialChar}</p>` +
+        `<p><strong>Password:</strong> ${password}</p>`;
 }
