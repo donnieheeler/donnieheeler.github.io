@@ -91,15 +91,9 @@ main {
     font-size: 14px;
 }
 
-#output-container {
-    text-align: center; /* Centers text inside */
-    margin-top: 20px; /* Adds spacing */
-}
-
-#output p {
-    display: inline-block; /* Prevents full-width stretching */
-    text-align: left; /* Keeps text readable */
-    margin: 5px auto; /* Centers each line */
+#output {
+    text-align: center; /* Centers all text */
+    margin-top: 20px;
 }
 
 .update-blog th, .update-log td {
