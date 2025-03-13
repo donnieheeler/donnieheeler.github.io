@@ -4,29 +4,23 @@ async function generatePassword() {
     let words = [];
 
     for (let i = 0; i < 3; i++) {
-        let iframe = document.createElement("iframe");
-        iframe.style.display = "none"; // Hide the iframe
-        document.body.appendChild(iframe);
+        let response = await fetch("https://en.wikipedia.org/api/rest_v1/page/random/summary");
+        let data = await response.json();
 
-        let loaded = new Promise((resolve, reject) => {
-            iframe.onload = () => resolve(iframe);
-            iframe.onerror = reject;
-        });
+        let url = "https://en.wikipedia.org/wiki/" + encodeURIComponent(data.title);
+        wikipediaPages.push(url);
 
-        iframe.src = "https://en.wikipedia.org/wiki/Special:Random";
-        await loaded;
-
-        let textContent = iframe.contentDocument.body.innerText;
-        document.body.removeChild(iframe); // Remove after loading
-
-        let wordArray = textContent.split(/\s+/).filter(word => word.length > 2);
+        let wordArray = data.extract.split(/\s+/).filter(word => word.length > 2); // Remove short words
         let randomIndex = Math.floor(Math.random() * wordArray.length);
-        words.push(wordArray[randomIndex]);
-
-        wikipediaPages.push(iframe.src);
+        
+        if (wordArray.length > 0) {
+            words.push(wordArray[randomIndex]);
+        } else {
+            words.push("FallbackWord"); // Avoid empty words
+        }
     }
 
-    let digits = Math.floor(1000 + Math.random() * 9000);
+    let digits = Math.floor(1000 + Math.random() * 9000); // 4 random digits
     let specialChars = "!@#$%^&*";
     let specialChar = specialChars[Math.floor(Math.random() * specialChars.length)];
 
@@ -37,4 +31,3 @@ async function generatePassword() {
         `<p><strong>Wikipedia Pages Used:</strong></p>` +
         wikipediaPages.map(url => `<p><a href='${url}' target='_blank'>${url}</a></p>`).join('');
 }
-
