@@ -19,10 +19,10 @@ async function generatePassword() {
             let selectedWord = wordArray[randomIndex];
 
             words.push(selectedWord);
-            wordSelections.push({ title, index: randomIndex + 1, word: selectedWord }); // +1 to make index human-readable
+            wordSelections.push({ title, url, index: randomIndex + 1, word: selectedWord }); // +1 to make index human-readable
         } else {
             words.push("FallbackWord");
-            wordSelections.push({ title, index: 1, word: "FallbackWord" });
+            wordSelections.push({ title, url, index: 1, word: "FallbackWord" });
         }
     }
 
@@ -34,7 +34,7 @@ async function generatePassword() {
 
     document.getElementById("output").innerHTML =
         wordSelections.map(selection => 
-            `<p><strong>${selection.title}</strong> - ${selection.index}th word - "<strong>${selection.word}</strong>"</p>`
+            `<p><strong><a href="${selection.url}" target="_blank">${selection.title}</a></strong> - ${selection.index}th word - "<strong>${selection.word}</strong>"</p>`
         ).join('') +
         `<p><strong>Numbers generated:</strong> ${digits}</p>` +
         `<p><strong>Symbol Generated:</strong> ${specialChar}</p>` +
