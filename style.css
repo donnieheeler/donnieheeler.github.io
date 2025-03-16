@@ -122,10 +122,10 @@ main {
 }
 
 .word-carousel span:nth-child(1) { transform: rotate(0deg) translateY(-100px); animation-delay: 0s; }
-.word-carousel span:nth-child(2) { transform: rotate(72deg) translateY(-100px); animation-delay: 2s; }
-.word-carousel span:nth-child(3) { transform: rotate(144deg) translateY(-100px); animation-delay: 4s; }
-.word-carousel span:nth-child(4) { transform: rotate(216deg) translateY(-100px); animation-delay: 6s; }
-.word-carousel span:nth-child(5) { transform: rotate(288deg) translateY(-100px); animation-delay: 8s; }
+.word-carousel span:nth-child(2) { transform: rotate(72deg) translateY(-100px); animation-delay: 0s; }
+.word-carousel span:nth-child(3) { transform: rotate(144deg) translateY(-100px); animation-delay: 0s; }
+.word-carousel span:nth-child(4) { transform: rotate(216deg) translateY(-100px); animation-delay: 0s; }
+.word-carousel span:nth-child(5) { transform: rotate(288deg) translateY(-100px); animation-delay: 0s; }
 
 @keyframes spinWords {
     0% { transform: rotate(0deg) translateY(-100px); }
