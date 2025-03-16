@@ -103,13 +103,14 @@ main {
 
 .word-carousel {
     position: relative;
-    width: 200px; /* Adjust the size of the circle */
+    width: 200px; /* Adjust for circle size */
     height: 200px;
     margin: 50px auto;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: spinWords 10s linear infinite;
 }
 
 .word-carousel span {
@@ -118,18 +119,19 @@ main {
     font-weight: bold;
     transform-origin: center;
     opacity: 1;
-    animation: spinWords 10s linear infinite;
 }
 
-.word-carousel span:nth-child(1) { transform: rotate(0deg) translateY(-100px); animation-delay: 0s; }
-.word-carousel span:nth-child(2) { transform: rotate(72deg) translateY(-100px); animation-delay: 0s; }
-.word-carousel span:nth-child(3) { transform: rotate(144deg) translateY(-100px); animation-delay: 0s; }
-.word-carousel span:nth-child(4) { transform: rotate(216deg) translateY(-100px); animation-delay: 0s; }
-.word-carousel span:nth-child(5) { transform: rotate(288deg) translateY(-100px); animation-delay: 0s; }
+/* Position each word in a circle */
+.word-carousel span:nth-child(1) { transform: rotate(0deg) translateY(-100px); }
+.word-carousel span:nth-child(2) { transform: rotate(72deg) translateY(-100px); }
+.word-carousel span:nth-child(3) { transform: rotate(144deg) translateY(-100px); }
+.word-carousel span:nth-child(4) { transform: rotate(216deg) translateY(-100px); }
+.word-carousel span:nth-child(5) { transform: rotate(288deg) translateY(-100px); }
 
+/* Animate the entire container so all words move together */
 @keyframes spinWords {
-    0% { transform: rotate(0deg) translateY(-100px); }
-    100% { transform: rotate(360deg) translateY(-100px); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 
