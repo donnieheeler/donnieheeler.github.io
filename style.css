@@ -112,7 +112,7 @@ main {
 
 .rotating-words span {
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
     text-align: center;
     opacity: 0;
