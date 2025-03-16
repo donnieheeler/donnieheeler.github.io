@@ -101,6 +101,39 @@ main {
     text-align: left;
 }
 
+.rotating-words {
+    font-size: 2rem;
+    font-weight: bold;
+    height: 2rem;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.rotating-words span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation: rotateWords 10s linear infinite;
+}
+
+.rotating-words span:nth-child(1) { animation-delay: 0s; }
+.rotating-words span:nth-child(2) { animation-delay: 2s; }
+.rotating-words span:nth-child(3) { animation-delay: 4s; }
+.rotating-words span:nth-child(4) { animation-delay: 6s; }
+.rotating-words span:nth-child(5) { animation-delay: 8s; }
+
+@keyframes rotateWords {
+    0% { opacity: 0; transform: translateY(100%); }
+    10% { opacity: 1; transform: translateY(0); }
+    30% { opacity: 1; transform: translateY(0); }
+    40% { opacity: 0; transform: translateY(-100%); }
+    100% { opacity: 0; transform: translateY(-100%); }
+}
+
+
 /* --- Blog archive fixes --- */
 .blog-archive {
     width: 100%; /* Make sure it doesn’t stretch too much */
