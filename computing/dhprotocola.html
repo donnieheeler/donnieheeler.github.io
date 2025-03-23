@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Encryption Tool</title>
+</head>
+<body>
+  <h1>Simple Encryption</h1>
+
+  <label>Code Word:</label><br>
+  <input type="text" id="codeWord"><br><br>
+
+  <label>Code Number (e.g. 3134):</label><br>
+  <input type="text" id="codeNumber"><br><br>
+
+  <label>Message:</label><br>
+  <textarea id="message" rows="4" cols="50"></textarea><br><br>
+
+  <label>Mode:</label><br>
+  <select id="mode">
+    <option value="encode">Encode</option>
+    <option value="decode">Decode</option>
+  </select><br><br>
+
+  <button onclick="handleSubmit()">Process</button><br><br>
+
+  <div id="output"></div>
+
+  <script src="encryption.js"></script>
+  <script>
+    function handleSubmit() {
+      const codeWord = document.getElementById("codeWord").value;
+      const codeNumber = document.getElementById("codeNumber").value;
+      const message = document.getElementById("message").value;
+      const isEncoding = document.getElementById("mode").value === "encode";
+
+      const result = processMessage(codeWord, codeNumber, message, isEncoding);
+      document.getElementById("output").textContent = result;
+    }
+  </script>
+</body>
+</html>
