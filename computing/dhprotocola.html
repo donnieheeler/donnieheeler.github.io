@@ -6,8 +6,34 @@
 </head>
 <link rel="stylesheet" href="../style.css">
 <body>
-  <h1>DH Encryption Protocol A</h1>
+  <h2 style="text-align: center;">Wikipedia Password Generator</h2>
+    <div class="roadmap-box">
+    <p>DH Encryption Protocol A is a layered encryption system designed to obscure short messages through structured transformation. It combines character-level substitution with progressive shifts, creating a cipher that changes continuously across the length of a message. The result is a message that appears randomized and gives no clear entry point for decoding without the original key.</p>
+  <p>The strength of the system comes from obscurity through interaction—each phase of transformation depends on the one before it. There is no fixed alphabet, no consistent shift, and no repeatable output without full knowledge of the initial key.</p>
 
+  <h2>Plugboard Mapping</h2>
+  <p>The first layer is a substitution system that remaps the alphabet using a set of dynamic swaps. These swaps are not random—they are determined by a keyword and a calculated offset, creating a plugboard unique to the input. Repeated characters in the keyword introduce reversals, which adds instability to the mapping. These reversals prevent simple pattern-matching and create one-to-many character relationships that are difficult to track.</p>
+  <p>The mapping is not bidirectional by default, and without knowing the logic that generated it, it's nearly impossible to reconstruct. Even with the mapping in hand, it isn't alphabetically linear, and the original letter positions are intentionally scrambled.</p>
+
+  <h2>Progressive Shifting</h2>
+  <p>After substitution, the transformed message undergoes a second phase: a shifting cipher that alters each letter based on a running calculation. Unlike a traditional Caesar cipher, this shift is not consistent. The amount changes from one character to the next, and the rate of change itself changes over time.</p>
+  <p>The shift is influenced by:</p>
+  <ul>
+    <li>An initial modifier (derived from the substitution phase)</li>
+    <li>A loop of numbers drawn from the key</li>
+    <li>The cumulative total of previous shifts</li>
+  </ul>
+  <p>Because each shift builds on the last, the further into the message you go, the more detached each letter becomes from its original form. There is no repeating cycle, no periodic reset. It continuously diverges.</p>
+  <p>This method creates an encryption trail that branches further with each step, making frequency analysis almost useless. The first few characters of the message might be loosely trackable, but by the halfway mark, the pattern has moved too far to follow without re-creating the entire sequence from the key.</p>
+
+  <h2>Layer Interaction</h2>
+  <p>Neither the substitution nor the shifting cipher is especially strong on its own. What makes the protocol effective is how these two systems interact. The substitution scrambles the message into an unfamiliar state, then the shifting cipher builds complexity on top of it. The final result reflects no obvious structure, even when the input contains repetition or simple words.</p>
+  <p>Since the output depends on cumulative logic and plugboard state, even changing one letter in the key—or one digit in the loop—will produce a completely different result. This sensitivity makes brute-force attempts ineffective without exact replication of the protocol.</p>
+
+  <h2>Summary</h2>
+  <p>DH Encryption Protocol A relies on instability, compounding logic, and structured transformation. There is no single key that unlocks it—only the full process, executed in the correct order, using the correct seed, can reverse it. It doesn't hide data by making it disappear. It hides data by transforming it beyond recognition.</p>
+    </div>
+  
   <label>Code Word:</label><br>
   <input type="text" id="codeWord"><br><br>
 
