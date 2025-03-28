@@ -228,16 +228,16 @@ footer {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
 }
 
-.roadmap-box h2 {
+.roadmap-box2 h2 {
     text-align: center;
     margin-bottom: 15px;
 }
 
-.roadmap-box ul, .roadmap-box ol {
+.roadmap-box2 ul, .roadmap-box ol {
     margin-left: 20px;
 }
 
-.roadmap-box p, .roadmap-box li {
+.roadmap-box2 p, .roadmap-box2 li {
     font-size: 14px;
     line-height: 1.5;
 }
