@@ -220,7 +220,7 @@ footer {
 
 .roadmap-box2 {
     max-width: 400px; /* Keeps it readable */
-    margin: 20px auto; /* Centers it on the page */
+    margin: 40px auto; /* Centers it on the page */
     padding: 20px;
     border: 2px solid #222; /* Adds a solid border */
     border-radius: 0px; /* Slightly rounded corners */
@@ -233,8 +233,8 @@ footer {
     margin-bottom: 15px;
 }
 
-.roadmap-box2 ul, .roadmap-box ol {
-    margin-left: 20px;
+.roadmap-box2 ul, .roadmap-box2 ol {
+    margin-left: 15px;
 }
 
 .roadmap-box2 p, .roadmap-box2 li {
