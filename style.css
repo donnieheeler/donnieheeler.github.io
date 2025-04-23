@@ -192,6 +192,7 @@ footer {
     text-align: center;
     padding: 20px; /* Reduced from 100px to prevent unnecessary space */
     font-size: 0.8em;
+}
 .parks-format {
     display: flex;
     flex-direction: column;
@@ -207,13 +208,13 @@ footer {
     justify-content: space-between;
     gap: 15px;
     flex-wrap: wrap;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
+    border: 0px solid #ccc;
+    padding: 5px;
     background-color: #f9f9f9;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
     font-size: 1rem;
     line-height: 1.4;
+    font-weight: bold;
 }
 
 .park-entry span,
@@ -223,27 +224,15 @@ footer {
     flex-shrink: 0;
 }
 
-.park-number {
-    font-weight: bold;
-    color: #2c3e50;
-}
-
-.park-name {
-    font-weight: 500;
-    color: #34495e;
-}
-
-.park-address {
-    color: #555;
-}
-
 .park-map {
-    color: #2980b9;
+    color: #0055FF;
     font-weight: bold;
-    text-decoration
+    text-decoration: none;
+}
 
-
-
+.park-map:hover {
+    text-decoration: underline;
+}
 
 .roadmap-box {
     max-width: 800px; /* Keeps it readable */
