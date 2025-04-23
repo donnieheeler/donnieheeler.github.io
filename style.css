@@ -192,18 +192,43 @@ footer {
     text-align: center;
     padding: 20px; /* Reduced from 100px to prevent unnecessary space */
     font-size: 0.8em;
-}
 .parks-format {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    max-width: 700px;
+    max-width: 900px;
     margin: auto;
 }
+
+.park-entry {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    flex-wrap: wrap;
+}
+
+.park-entry p,
+.park-entry a {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.park-map {
+    color: #2980b9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .park-map:hover {
     text-decoration: underline;
 }
+
 
 
 .roadmap-box {
