@@ -195,7 +195,7 @@ footer {
 .parks-format {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     padding: 20px;
     max-width: 900px;
     margin: auto;
@@ -204,7 +204,7 @@ footer {
 .park-entry {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 15px;
@@ -213,10 +213,10 @@ footer {
     flex-wrap: wrap;
 }
 
-.park-entry p,
+.park-entry span,
 .park-entry a {
-    margin: 0;
     white-space: nowrap;
+    margin: 0;
 }
 
 .park-map {
