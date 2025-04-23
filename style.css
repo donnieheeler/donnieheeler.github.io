@@ -195,7 +195,7 @@ footer {
 .parks-format {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     padding: 20px;
     max-width: 900px;
     margin: auto;
@@ -204,30 +204,44 @@ footer {
 .park-entry {
     display: flex;
     align-items: center;
-    gap: 30px;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 15px;
+    padding: 20px;
     background-color: #f9f9f9;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
-    flex-wrap: wrap;
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
 .park-entry span,
 .park-entry a {
+    margin-right: 10px;
     white-space: nowrap;
-    margin: 0;
+    flex-shrink: 0;
+}
+
+.park-number {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.park-name {
+    font-weight: 500;
+    color: #34495e;
+}
+
+.park-address {
+    color: #555;
 }
 
 .park-map {
     color: #2980b9;
     font-weight: bold;
-    text-decoration: none;
-}
+    text-decoration
 
-.park-map:hover {
-    text-decoration: underline;
-}
 
 
 
