@@ -193,6 +193,20 @@ footer {
     padding: 20px; /* Reduced from 100px to prevent unnecessary space */
     font-size: 0.8em;
 }
+
+.parks-map {
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    padding: 0 20px;
+}
+
+.parks-map img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    display: block;
+}
+
 .parks-format {
     display: flex;
     flex-direction: column;
