@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parks</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+	<header>
+	<h2 style="text-align: center;">Parks</h2>
+	</header>
+	
+	<main>
+
+	</main> 
+	<footer> 
+		<p>
+			<a href="../baseball.html">← Back to Baseball</a>
+		</p> 
+	</footer> 
+	<script src="scripts/modal.js"></script>
+</body> 
+</html>
