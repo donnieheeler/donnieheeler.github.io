@@ -193,6 +193,55 @@ footer {
     padding: 20px; /* Reduced from 100px to prevent unnecessary space */
     font-size: 0.8em;
 }
+.parks-format {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.park-entry {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.park-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #2c3e50;
+}
+
+.park-details {
+    flex: 1;
+}
+
+.park-name {
+    margin: 0;
+    color: #34495e;
+}
+
+.park-address {
+    margin: 5px 0;
+    color: #555;
+}
+
+.park-map {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.park-map:hover {
+    text-decoration: underline;
+}
+
 
 .roadmap-box {
     max-width: 800px; /* Keeps it readable */
