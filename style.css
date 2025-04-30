@@ -195,7 +195,7 @@ footer {
 }
 
 .parks-map {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto 20px auto;
     padding: 0 20px;
 }
@@ -211,7 +211,7 @@ footer {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
 }
 
