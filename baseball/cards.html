@@ -29,12 +29,72 @@
 			<p>
 			<i>The Current State</i><br>
 			We now have 32 cards, each with its own rating, match count, and an assigned tier (S through D). Elo is calculated via a custom Google Sheets script, using a standard kFactor = 32, and ratings update automatically when matchups are marked "done".<br>
-		The best cards right now:<br>
-		Aaron Judge T210, Lindor Blue Atomic, and Nimmo Snapshots Auto — all sitting solidly in S-Tier with 10–15 matchups under their belts.<br>
-		At the bottom:<br>
-		Tony Gwynn Chrome, Vladdy Jr. Bowman, and J.P. Morgan Heritage have sunk to the D-Tier after repeated trials.<br>
-		And in the middle? That’s where the most interesting movement happens. A-Tier and B-Tier are volatile, still tuning themselves.
+			The best cards right now:<br>
+			Aaron Judge T210, Lindor Blue Atomic, and Nimmo Snapshots Auto — all sitting solidly in S-Tier with 10–15 matchups under their belts.<br>
+			At the bottom:<br>
+			Tony Gwynn Chrome, Vladdy Jr. Bowman, and J.P. Morgan Heritage have sunk to the D-Tier after repeated trials.<br>
+			And in the middle? That’s where the most interesting movement happens. A-Tier and B-Tier are volatile, still tuning themselves.
 			</p>
+
+			<i>Process Design</i><br>
+			After some experimentation, I’ve adopted a two-phase pipeline for evaluating cards:<br>
+			1. Stagger Phase (New Card Intake)<br>
+			When I add new cards: <br>
+			They all start at 1000.<br>
+			Each gets 3 initial matchups: the lowest A/S-tier, the first B-tier above 1000, and the highest D-tier.<br>
+			This gives me a fast read without exhausting the whole list.<br>
+			2. Tuning Phase (Pressure Testing)<br>
+			Once those cards have ~3 matchups, I move them into tuning:<br>
+			1 matchup vs a higher card in the same tier<br>
+			1 matchup vs someone ±1 tier<br>
+			1 matchup vs their tier floor<br>
+			This gets them to 5–6 total matchups, which is the sweet spot for Elo to settle. At that point, I trust where they are and can shift focus to others.<br>
+			</p>
+			
+			<p>
+			<i>Process Design</i><br>
+			After some experimentation, I’ve adopted a two-phase pipeline for evaluating cards:<br>
+			1. Stagger Phase (New Card Intake)<br>
+			When I add new cards: <br>
+			They all start at 1000.<br>
+			Each gets 3 initial matchups: the lowest A/S-tier, the first B-tier above 1000, and the highest D-tier.<br>
+			This gives me a fast read without exhausting the whole list.<br>
+			2. Tuning Phase (Pressure Testing)<br>
+			Once those cards have ~3 matchups, I move them into tuning:<br>
+			1 matchup vs a higher card in the same tier<br>
+			1 matchup vs someone ±1 tier<br>
+			1 matchup vs their tier floor<br>
+			This gets them to 5–6 total matchups, which is the sweet spot for Elo to settle. At that point, I trust where they are and can shift focus to others.<br>
+			</p>
+			
+			<p>
+			<i>Why This Matters (To Me)</i><br>
+This isn’t just busywork. It’s how I feel the collection. I want to see if the cards I love really hold up against the cards I think I love. That requires structure—but not rigidity.
+			</p>
+
+			<table border="1" cellpadding="4" cellspacing="0">
+  			<thead>
+   			 <tr>
+    			  <th>ID</th>
+    			  <th>Card</th>
+     			 <th>Rating</th>
+     			 <th>Matches</th>
+      			 <th>Rank</th>
+      			 <th>Tier</th>
+   			  </tr>
+ 			  </thead>
+			   <tbody>
+			     <tr><td>13</td><td>2024 Aaron Judge - T210</td><td>1152</td><td>10</td><td>1</td><td>S-Tier</td></tr>
+  			   <tr><td>21</td><td>2022 Francisco Lindor - Topps Chrome - Blue Atomic - #95/100</td><td>1131</td><td>11</td><td>2</td><td>S-Tier</td></tr>
+ 			    <tr><td>16</td><td>2019 Brandon Nimmo - Archives Snapshots - Auto , #03/50</td><td>1126</td><td>15</td><td>3</td><td>S-Tier</td></tr>
+  			   <tr><td>14</td><td>1978 Lenny Randle - Boxtop - Auto</td><td>1125</td><td>15</td><td>4</td><td>S-Tier</td></tr>
+ 			    <tr><td>6</td><td>2013 Carson Kelly - Bowman - Auto</td><td>1105</td><td>17</td><td>5</td><td>S-Tier</td></tr>
+  			   <tr><td>25</td><td>2024 R.A. Dickey - T206 - Auto</td><td>1095</td><td>6</td><td>6</td><td>A-Tier</td></tr>
+  			   <tr><td>20</td><td>2023 Pedro Martinez - 1988 Chrome Silver Pack - #67/99</td><td>1073</td><td>11</td><td>7</td><td>A-Tier</td></tr>
+  			   <tr><td>32</td><td>2011 Francisco Lindor - Bowman Chrome</td><td>1061</td><td>6</td><td>8</td><td>A-Tier</td></tr>
+			   </tbody>
+			 </table>
+
 		</div>
 	</main> 
 	<footer> 
