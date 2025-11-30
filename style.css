@@ -277,7 +277,7 @@ footer {
 .color-swatch {
     width: 180px;
     height: 180px;
-    border: 2px solid #222;
+    border: 0px solid #222;
     background-color: #fff; /* gets overridden by JS */
 }
 
