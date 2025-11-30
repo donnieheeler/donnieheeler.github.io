@@ -258,23 +258,41 @@ footer {
 }
 
 .color-box {
-    max-width: 800px; /* Keeps it readable */
-    margin: 20px auto; /* Centers it on the page */
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    border: 2px solid #222; /* Adds a solid border */
-    border-radius: 0px; /* Slightly rounded corners */
-    background-color: #f9f9f9; /* Light background for contrast */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
+    border: 2px solid #222;
+    background-color: #f9f9f9;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-.displaycolor-box {
-    max-width: 800px; /* Keeps it readable */
-    margin: 20px auto; /* Centers it on the page */
-    padding: 20px;
-    border: 2px solid #222;/* Adds a solid border */
-    border-radius: 0px; /* Slightly rounded corners */
-    background-color: #f9f9f9; /* Light background for contrast */
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); /* Adds subtle depth */
+/* Layout: swatch on the left, info on the right */
+.color-row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* The square swatch */
+.color-swatch {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #222;
+    background-color: #fff; /* gets overridden by JS */
+}
+
+/* Text info block */
+.color-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+}
+
+.color-line {
+    margin-bottom: 8px;
 }
 
 .roadmap-box h2 {
