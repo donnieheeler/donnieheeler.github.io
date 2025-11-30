@@ -8,16 +8,46 @@
 </head>
 <body>
     <h2 style="text-align: center;">Colors</h2>
-    <div class="color-box">
-        <div class="displaycolor-box">
-        </div>
-    <p></p>
-    </div>
-    <div style="text-align: center;">
 
+    <div class="color-box">
+        <div class="color-row">
+            <div class="color-swatch" id="color-swatch"></div>
+            <div class="color-info">
+                <div class="color-line" id="color-name"></div>
+                <div class="color-line" id="color-hex"></div>
+                <div class="color-line" id="color-rgb"></div>
+            </div>
+        </div>
     </div>
-    <div id="output-container">
-    <p id="output"></p>
-    </div>
+
+    <script>
+        // Edit these two values and everything else updates
+        const color = {
+            name: "Indigo",
+            hex: "#4B0082"
+        };
+
+        function hexToRgb(hex) {
+            hex = hex.replace("#", "");
+            if (hex.length === 3) {
+                hex = hex.split("").map(c => c + c).join("");
+            }
+            const r = parseInt(hex.slice(0, 2), 16);
+            const g = parseInt(hex.slice(2, 4), 16);
+            const b = parseInt(hex.slice(4, 6), 16);
+            return { r, g, b };
+        }
+
+        function renderColor(c) {
+            const rgb = hexToRgb(c.hex);
+
+            document.getElementById("color-swatch").style.backgroundColor = c.hex;
+            document.getElementById("color-name").textContent = c.name;
+            document.getElementById("color-hex").textContent = `Hex: ${c.hex}`;
+            document.getElementById("color-rgb").textContent = `RGB: ${rgb.r}, ${rgb.g}, ${rgb.b}`;
+        }
+
+        renderColor(color);
+    </script>
 </body>
 </html>
