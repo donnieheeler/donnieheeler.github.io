@@ -258,12 +258,12 @@ footer {
 }
 
 .color-box {
-    max-width: 200px;
+    max-width: 350px;
     margin: 20px auto;
     padding: 20px;
-    border: 0px solid #222;
-    background-color: #f9f9f9;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #222;
+    background-color: #fff;
+    /*box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Layout: swatch on the left, info on the right */
