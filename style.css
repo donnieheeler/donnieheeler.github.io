@@ -334,6 +334,28 @@ footer {
     line-height: 1.5;
 }
 
+.cloud-window {
+    width: 100%;
+    height: 180px;           /* your “cut-out” size */
+    overflow: hidden;        /* hides everything outside the window */
+    position: relative;
+    border: 2px solid #000;  /* optional “frame” */
+}
+
+.clouds {
+    width: 200%;
+    height: 100%;
+    background-image: url('images/clouds.jpg'); /* a wide clean cloud photo */
+    background-size: cover;
+    animation: scrollClouds 40s linear infinite; /* slow drift */
+}
+
+@keyframes scrollClouds {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+
 .sblgame-box {
     max-width: 800px; /* Keeps it readable */
     margin: 20px auto; /* Centers it on the page */
