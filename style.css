@@ -351,6 +351,27 @@ footer {
     animation: scrollClouds 160s linear infinite; /* slow drift */
 }
 
+.landing-letter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+  font-size: 6rem; /* adjust */
+  font-weight: 300;
+  color: white;
+  pointer-events: none; /* so clicks still hit the link */
+  z-index: 50; /* above the clouds */
+}
+
+.left-letter {
+  left: 10%;  /* tweak until it “feels right” */
+}
+
+.right-letter {
+  right: 10%;
+}
+
 @keyframes scrollClouds {
     from { transform: translateX(0); }
     to   { transform: translateX(-50%); }
