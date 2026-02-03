@@ -50,6 +50,15 @@ main {
     padding: 5px;
 }
 
+.bullet {
+    max-width: 800px; /* Keeps it readable */
+    margin: 20px auto; /* Centers it on the page */
+    padding: 20px;
+    border: 1px solid #222; /* Adds a solid border */
+    border-radius: 0px; /* Slightly rounded corners */
+    background-color: #white; /* Light background for contrast */
+}
+
 /* --- Fixing the table layout to match reference --- */
 .update-log {
     width: 100%;
