@@ -51,7 +51,7 @@ main {
 }
 
 .bullet {
-    max-width: 800px; /* Keeps it readable */
+    max-width: 500px; /* Keeps it readable */
     margin: 20px auto; /* Centers it on the page */
     padding: 20px;
     border: 1px solid #222; /* Adds a solid border */
